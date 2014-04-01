@@ -11,3 +11,8 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+ruby:
+  title: Programming Ruby 1.9
+  description: Ruby is the greatest language.
+  price: 23.25
+  image_url: ruby.png
