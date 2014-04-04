@@ -1,12 +1,5 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<h2>Pragmaticカート</h2>
-<ul>
-	<% @cart.line_items.each do |item| %>
-		<li><%= item.quantity %> &times; <%= item.product.title %></li>
-	<% end %>
-</ul>
 
-<%= button_to 'カートを空にする', @cart, method: :delete, confirm: '本当に良いですか？' %>
-
+<%= render @cart %>
